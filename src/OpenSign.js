@@ -5,8 +5,8 @@ export default function OpenSign({ festivalOpen }) {
     <div className={festivalOpen ? 'open' : 'closed'}>
       {
         festivalOpen
-          ? <h1>Welcome to the spooky festival!</h1>
-          : <h3>the spooky festival will be open annually october 1st  - 31st</h3>
+          ? <h1>welcome to the spoooooky festival!</h1>
+          : <h3>open october 1st through halloween!</h3>
       }
     </div>
   );

@@ -8,8 +8,8 @@ function App() {
 
   const [festivalOpen, setFestivalOpen] = useState(true);
   const [monsters, setMonsters] = useState(['vampire', 'witch', 'frankenstein', 'ghost']);
-  const [batSize, setBatSize] = useState(11);
-  const [catSize, setCatSize] = useState(10);
+  const [batSize, setBatSize] = useState(12);
+  const [catSize, setCatSize] = useState(11);
   
   function handleVampireClick() {
     monsters.push('vampire');
@@ -31,17 +31,17 @@ function App() {
   return (
     <div className="App" style={{ backgroundImage: `url(${backgroundImg})` }}>
       <OpenSign festivalOpen={festivalOpen} />
-      <button onClick={() => setFestivalOpen(!festivalOpen)}>festival?</button>
+      <button onClick={() => setFestivalOpen(!festivalOpen)}>wanna go?</button>
       <div className='fight'>
         <div className='competitor'>
-          <img src='bat.png' width={11 * batSize} />
+          <img src='bat.png' width={12 * batSize} />
           <div className='fight-buttons'>
             <button onClick={() => setBatSize(batSize + 1)}>grow bat</button>
             <button onClick={() => setCatSize(catSize - 1)}>shrink cat</button>
           </div>
         </div>
         <div className='competitor'>
-          <img src='cat.png' width={10 * catSize} />
+          <img src='cat.png' width={11 * catSize} />
           <div className='fight-buttons'>
             <button onClick={() => setCatSize(catSize + 1)}>grow cat</button>
             <button onClick={() => setBatSize(batSize - 1)}>shrink bat</button>
