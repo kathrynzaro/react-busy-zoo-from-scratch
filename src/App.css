@@ -1,38 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Bangers&family=Chicle&family=Comfortaa:wght@300&family=Creepster&family=Great+Vibes&family=Griffy&family=IM+Fell+French+Canon&family=IM+Fell+French+Canon+SC&family=Inconsolata:wght@200&family=Irish+Grover&family=Josefin+Sans&family=Karla&family=Limelight&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:wght@400;700&family=Nixie+One&family=Oswald&family=Philosopher:wght@400;700&family=Poiret+One&family=Press+Start+2P&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Slabo+27px&family=Space+Mono&family=Spectral&family=Tenor+Sans&family=Ultra&family=Unica+One&family=VT323&family=Varela+Round&family=Yeseva+One&display=swap');
+
+
+
 .App {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   text-align: center;
+  font-family: 'Creepster', cursive;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* font-family: 'Griffy', cursive; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 40px;
+  background-color: rgba(255, 255, 255, 0.611);
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 500px;
+  height: 280px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.competitor {
+  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-end;
+  /* height: 100%; */
+}
+
+.competitor img {
+  margin-bottom: 10px;
+}
+
+button {
+  font-family: 'Creepster', cursive;
+  font-size: 1.2rem;
+  padding: 4px;
+  background-color: white;
+  color: black;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 3px;
+}
+
+button:hover {
+  opacity: .7;
+  /* background-color: orange; */
+  cursor: pointer;
+}
+
+.fight-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+  /* background-color: rgba(0, 0, 0, 0.449);
+  border: 3px solid black;
+  border-radius: 20px; */
+  padding: 20px;
+
+}
+
+.closed  {
+  background-color: rgba(0, 0, 0, 0.735);
+  border: 3px solid black;
+  color: rgb(249, 146, 3);
+  padding: 10px;
+  border-radius: 15px;
+  letter-spacing: 5px;
+  width: fit-content;
+  margin: 20px 20px;
+  /* text-shadow: 1px 1px 3px rgb(255, 255, 255); */
+  font-size: 1.2rem;
+}
+
+.open  {
+  background-color: rgba(0, 0, 0, 0.735);
+  border: 2px solid black;
   color: white;
+  font-size: .8rem;
+  padding: 10px;
+  border-radius: 15px;
+  letter-spacing: 5px;
+  width: fit-content;
+  margin: 20px 20px;
+  /* text-shadow: 1px 1px 2px white; */
 }
 
-.App-link {
-  color: #61dafb;
+h1, h3 {
+  margin: 10px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.monster {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.festival {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.754);
+  padding: 20px 30px;
+  border-radius: 30px;
+  border: 2px solid white;
+  margin: 20px 50px;
+}
+
+
+.monster-img {
+  width: 60px;
+}
+
+.witch-img {
+  width: 165px;
+}
+
+.ghost-img {
+  width: 70px;
+  margin-bottom: 120px;
+}
+
+.vampire-img {
+  width: 80px;
 }
