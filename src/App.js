@@ -1,23 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import OpenSign from './OpenSign';
+import Festival from './Festival';
+import backgroundImg from './halloween.png';
 
 function App() {
+
+  const [festivalOpen, setFestivalOpen] = useState(true);
+  const [monsters, setMonsters] = useState('vampire', 'witch', 'frankenstein', 'ghost');
+  const [batSize, setBatSize] = useState(10);
+  const [catSize, setCatSize] = useState(10);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ backgroundImage: `url(${backgroundImg})` }}>
+      <div className='fight'>
+        <div className='competitor'>
+          <img src='bat.png' width={100} />
+          <div className='fight-buttons'>
+            <button>grow bat</button>
+            <button>shrink bat</button>
+          </div>
+        </div>
+        <div className='competitor'>
+          <img src='cat.png' width={100}/>
+          <div className='fight-buttons'>
+            <button>grow cat</button>
+            <button>shrink cat</button>
+          </div>
+        </div>
+      </div>
+      <OpenSign festivalOpen={festivalOpen} />
+      <button>Open/Closed</button>
+      <Festival monsters={monsters} />
+      <div className='buttons'>
+        <button>vampire</button>
+        <button>witch</button>
+        <button>frankenstein</button>
+        <button>ghost</button>
+      </div>
     </div>
   );
 }
