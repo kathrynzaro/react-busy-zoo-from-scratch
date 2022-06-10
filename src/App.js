@@ -7,10 +7,27 @@ import backgroundImg from './halloween.png';
 function App() {
 
   const [festivalOpen, setFestivalOpen] = useState(true);
-  const [monsters, setMonsters] = useState('vampire', 'witch', 'frankenstein', 'ghost');
+  const [monsters, setMonsters] = useState(['vampire', 'witch', 'frankenstein', 'ghost']);
   const [batSize, setBatSize] = useState(11);
   const [catSize, setCatSize] = useState(10);
   
+  function handleVampireClick() {
+    monsters.push('vampire');
+    setMonsters(monsters.slice());
+  }
+  function handleWitchClick() {
+    monsters.push('witch');
+    setMonsters(monsters.slice());
+  }
+  function handleFrankensteinClick() {
+    monsters.push('frankenstein');
+    setMonsters(monsters.slice());
+  }
+  function handleGhostClick() {
+    monsters.push('ghost');
+    setMonsters(monsters.slice());
+  }
+
   return (
     <div className="App" style={{ backgroundImage: `url(${backgroundImg})` }}>
       <OpenSign festivalOpen={festivalOpen} />
@@ -33,10 +50,10 @@ function App() {
       </div>
       <Festival monsters={monsters} />
       <div className='buttons'>
-        <button>vampire</button>
-        <button>witch</button>
-        <button>frankenstein</button>
-        <button>ghost</button>
+        <button onClick={handleVampireClick}>vampire</button>
+        <button onClick={handleWitchClick}>witch</button>
+        <button onClick={handleFrankensteinClick}>frankenstein</button>
+        <button onClick={handleGhostClick}>ghost</button>
       </div>
     </div>
   );

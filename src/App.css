@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   text-align: center;
   font-family: 'Creepster', cursive;
   font-size: 1.3rem;
@@ -13,7 +14,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   /* font-family: 'Griffy', cursive; */
 }
 
@@ -92,4 +94,39 @@ button:hover {
   letter-spacing: 4px;
   width: 80vw;
   margin: 20px 0;
+}
+
+.monster {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.festival {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.754);
+  padding: 40px;
+  border-radius: 30px;
+  border: 3px solid white;
+  margin: 20px 50px;
+}
+
+
+.monster-img {
+  width: 60px;
+}
+
+.witch-img {
+  width: 165px;
+}
+
+.ghost-img {
+  width: 70px;
+  margin-bottom: 120px;
+}
+
+.vampire-img {
+  width: 80px;
 }
