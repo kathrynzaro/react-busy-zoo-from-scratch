@@ -13,24 +13,24 @@ function App() {
   
   return (
     <div className="App" style={{ backgroundImage: `url(${backgroundImg})` }}>
+      <OpenSign festivalOpen={festivalOpen} />
+      <button onClick={() => setFestivalOpen(!festivalOpen)}>festival?</button>
       <div className='fight'>
         <div className='competitor'>
           <img src='bat.png' width={100} />
           <div className='fight-buttons'>
             <button>grow bat</button>
-            <button>shrink bat</button>
+            <button>shrink cat</button>
           </div>
         </div>
         <div className='competitor'>
           <img src='cat.png' width={100}/>
           <div className='fight-buttons'>
             <button>grow cat</button>
-            <button>shrink cat</button>
+            <button>shrink bat</button>
           </div>
         </div>
       </div>
-      <OpenSign festivalOpen={festivalOpen} />
-      <button>Open/Closed</button>
       <Festival monsters={monsters} />
       <div className='buttons'>
         <button>vampire</button>

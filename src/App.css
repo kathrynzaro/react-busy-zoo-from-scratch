@@ -5,6 +5,7 @@
 .App {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   text-align: center;
   font-family: 'Creepster', cursive;
   font-size: 1.3rem;
@@ -22,6 +23,10 @@
   justify-content: center;
   align-items: flex-end;
   margin: 50px;
+  background-color: rgba(0, 0, 0, 0.449);
+  border: 3px solid black;
+  border-radius: 20px;
+  width: 50vw;
 }
 
 .competitor {
@@ -30,12 +35,14 @@
 
 button {
   font-family: 'Creepster', cursive;
-  font-size: 1.3rem;
-  padding: 5px;
+  font-size: 1.2rem;
+  padding: 4px;
   background-color: white;
+  color: black;
   margin: 5px;
-  border: 3px solid orange;
-  border-radius: 10px;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 3px;
 }
 
 button:hover {
@@ -53,5 +60,19 @@ button:hover {
   display: flex;
   flex-direction: row;
   margin-bottom: 100px;
+  background-color: rgba(0, 0, 0, 0.449);
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+h1 {
+  background-color: rgba(0, 0, 0, 0.735);
+  border: 3px solid black;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  letter-spacing: 4px;
+  width: 80vw;
 }
 
