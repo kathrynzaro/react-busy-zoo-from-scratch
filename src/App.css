@@ -57,6 +57,10 @@ button {
   letter-spacing: 3px;
 }
 
+.custom-button {
+  font-family: 'Creepster', cursive;
+}
+
 button:hover {
   opacity: .7;
   /* background-color: orange; */

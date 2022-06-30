@@ -3,6 +3,7 @@ import { useState } from 'react';
 import OpenSign from './OpenSign';
 import Festival from './Festival';
 import backgroundImg from './halloween.png';
+import CustomButton from './CustomButton';
 
 function App() {
 
@@ -31,29 +32,29 @@ function App() {
   return (
     <div className="App" style={{ backgroundImage: `url(${backgroundImg})` }}>
       <OpenSign festivalOpen={festivalOpen} />
-      <button onClick={() => setFestivalOpen(!festivalOpen)}>wanna go?</button>
+      <CustomButton onClick={() => setFestivalOpen(!festivalOpen)}>wanna go?</CustomButton>
       <div className='fight'>
         <div className='competitor'>
           <img src='bat.png' width={12 * batSize} />
           <div className='fight-buttons'>
-            <button onClick={() => setBatSize(batSize + 1)}>grow bat</button>
-            <button onClick={() => setCatSize(catSize - 1)}>shrink cat</button>
+            <CustomButton onClick={() => setBatSize(batSize + 1)}>grow bat</CustomButton>
+            <CustomButton onClick={() => setCatSize(catSize - 1)}>shrink cat</CustomButton>
           </div>
         </div>
         <div className='competitor'>
           <img src='cat.png' width={11 * catSize} />
           <div className='fight-buttons'>
-            <button onClick={() => setCatSize(catSize + 1)}>grow cat</button>
-            <button onClick={() => setBatSize(batSize - 1)}>shrink bat</button>
+            <CustomButton onClick={() => setCatSize(catSize + 1)}>grow cat</CustomButton>
+            <CustomButton onClick={() => setBatSize(batSize - 1)}>shrink bat</CustomButton>
           </div>
         </div>
       </div>
       <Festival monsters={monsters} />
       <div className='buttons'>
-        <button onClick={handleVampireClick}>add vampire</button>
-        <button onClick={handleWitchClick}>add witch</button>
-        <button onClick={handleFrankensteinClick}>add frankenstein</button>
-        <button onClick={handleGhostClick}>add ghost</button>
+        <CustomButton onClick={handleVampireClick}>add vampire</CustomButton>
+        <CustomButton onClick={handleWitchClick}>add witch</CustomButton>
+        <CustomButton onClick={handleFrankensteinClick}>add frankenstein</CustomButton>
+        <CustomButton onClick={handleGhostClick}>add ghost</CustomButton>
       </div>
     </div>
   );
