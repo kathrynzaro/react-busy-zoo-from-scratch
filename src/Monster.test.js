@@ -23,4 +23,4 @@ test('if we pass a ghost to Monster it should render a ghost image', () => {
   render(<Monster monster ='ghost' />);
   const ghostElement = screen.queryByAltText(/ghost/i);
   expect(ghostElement).toBeInTheDocument();
-});
+}); 

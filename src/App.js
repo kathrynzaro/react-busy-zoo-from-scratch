@@ -50,10 +50,10 @@ function App() {
       </div>
       <Festival monsters={monsters} />
       <div className='buttons'>
-        <button onClick={handleVampireClick}>vampire</button>
-        <button onClick={handleWitchClick}>witch</button>
-        <button onClick={handleFrankensteinClick}>frankenstein</button>
-        <button onClick={handleGhostClick}>ghost</button>
+        <button onClick={handleVampireClick}>add vampire</button>
+        <button onClick={handleWitchClick}>add witch</button>
+        <button onClick={handleFrankensteinClick}>add frankenstein</button>
+        <button onClick={handleGhostClick}>add ghost</button>
       </div>
     </div>
   );
