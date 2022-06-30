@@ -14,6 +14,9 @@ export default function App() {
           <li>
             <Link to="/admin">Admin</Link>
           </li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
         </ul>
       </div>
       <Routes>
