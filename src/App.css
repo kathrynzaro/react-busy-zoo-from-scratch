@@ -147,3 +147,35 @@ h1, h3 {
 .vampire-img {
   width: 80px;
 }
+
+.admin {
+  font-family: 'Space Mono';
+  text-align: center;
+  padding: 20px;
+}
+
+.admin h2 {
+  padding: 10px;
+}
+
+/* .chart {
+  margin: 50px;
+} */
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  width: 100%;
+  align-items: center;
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: 'Space Mono';
+  color: black;
+  text-transform: uppercase;
+}
+

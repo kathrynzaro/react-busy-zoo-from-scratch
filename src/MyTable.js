@@ -18,11 +18,12 @@ export default function MyTable() {
         title="animals"
         options={{
           headerStyle: {
-            background: 'thistle',
-            border: '3px solid thistle'
+            background: 'salmon',
+            border: '3px solid whitesmoke'
           },
           rowStyle: {
-            background: 'lavender'
+            background: 'lightsalmon',
+            border: '3px solid whitesmoke'
           }
         }}
       />
