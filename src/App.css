@@ -149,7 +149,7 @@ h1, h3 {
 }
 
 .admin {
-  font-family: 'Space Mono';
+  font-family: 'Creepster';
   text-align: center;
   padding: 20px;
 }
@@ -158,9 +158,7 @@ h1, h3 {
   padding: 10px;
 }
 
-/* .chart {
-  margin: 50px;
-} */
+
 
 ul {
   display: flex;
@@ -170,6 +168,8 @@ ul {
   width: 100%;
   align-items: center;
   list-style-type: none;
+  height: 50px;
+  background-color: rgb(184, 52, 255);
 }
 
 ul li a {
@@ -177,6 +177,17 @@ ul li a {
   font-family: 'Creepster';
   color: black;
   text-transform: uppercase;
+  border: 3px solid black;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 10px;
+  background-color: white;
+}
+
+ul li a:hover {
+  cursor: pointer;
+  background-color: rgb(184, 52, 255);
+  opacity: .7;
 }
 
 h4 {
@@ -184,4 +195,3 @@ h4 {
   letter-spacing: 4px;
   font-size: 1.4rem;
 }
-
