@@ -5,7 +5,9 @@ import { animals } from './data';
 export default function MyTable() {
   return (
     <div>
+
       <MaterialTable
+        
         columns={
           [
             { title: 'name', field: 'first_name' },

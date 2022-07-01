@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, Link, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Zoo from './Zoo';
 import Admin from './Admin';
 
