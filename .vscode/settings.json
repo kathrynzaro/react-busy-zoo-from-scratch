@@ -21,7 +21,11 @@
     "titleBar.activeForeground": "#e7e7e7",
     "titleBar.border": "#6a6176",
     "titleBar.inactiveBackground": "#6a617699",
-    "titleBar.inactiveForeground": "#e7e7e799"
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "editorGroup.border": "#837991",
+    "panel.border": "#837991",
+    "sideBar.border": "#837991",
+    "tab.activeBorder": "#837991"
   },
   "peacock.color": "#6a6176"
 }
