@@ -4,7 +4,7 @@ import OpenSign from './OpenSign';
 import Festival from './Festival';
 import backgroundImg from './halloween.png';
 import CustomButton from './CustomButton';
-
+import { TextField } from '@mui/material';
 
 export default function Zoo() {
 
@@ -12,6 +12,7 @@ export default function Zoo() {
   const [monsters, setMonsters] = useState(['vampire', 'witch', 'frankenstein', 'ghost']);
   const [batSize, setBatSize] = useState(12);
   const [catSize, setCatSize] = useState(11);
+  const [festivalName, setFestivalName] = useState('spoooooky');
   
   function handleVampireClick() {
     monsters.push('vampire');
@@ -32,6 +33,15 @@ export default function Zoo() {
 
   return (
     <div className="App" style={{ backgroundImage: `url(${backgroundImg})` }}>
+      <TextField
+        sx={{ 
+          width: 300,
+          margin: 5,
+          input: { color: 'white', fontFamily: 'Creepster' },
+          label: { color: 'white', fontFamily: 'Creepster' }
+        }}
+        color="secondary" id="outlined-basic" label="Festival name" variant="outlined" onChange={e => setFestivalName(e.target.value) } placeholder='type festival name' />
+      <h4>Welcome to the {festivalName} festival!</h4>
       <OpenSign festivalOpen={festivalOpen} />
       <CustomButton onClick={() => setFestivalOpen(!festivalOpen)}>wanna go?</CustomButton>
       <div className='fight'>

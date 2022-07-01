@@ -8,6 +8,7 @@ export default function CustomButton({
   fontColor = 'black',
   border = '3px solid black',
   margin = '10px',
+  fontFamily = 'Creepster',
 }) {
   return (
     <Button
@@ -18,6 +19,7 @@ export default function CustomButton({
         color: fontColor,
         margin: margin,
         border: border,
+        fontFamily: fontFamily,
       }}
     >
       {children}

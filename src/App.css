@@ -174,8 +174,14 @@ ul {
 
 ul li a {
   text-decoration: none;
-  font-family: 'Space Mono';
+  font-family: 'Creepster';
   color: black;
   text-transform: uppercase;
+}
+
+h4 {
+  color: white;
+  letter-spacing: 4px;
+  font-size: 1.4rem;
 }
 
